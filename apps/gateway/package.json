@@ -1,13 +1,14 @@
 {
   "name": "gateway",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "private": true,
   "devDependencies": {
+    "@repo/typescript-config": "*",
     "@types/bun": "latest"
   },
   "scripts": {
-    "dev": "bun index.ts"
+    "dev": "bun src/index.ts"
   },
   "peerDependencies": {
     "typescript": "^5"
