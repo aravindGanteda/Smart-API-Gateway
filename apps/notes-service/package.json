@@ -1,15 +1,16 @@
 {
-  "name": "gateway",
+  "name": "@repo/notes-service",
   "module": "src/index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun run src/index.ts"
+  },
   "devDependencies": {
+    "@repo/db": "*",
     "@repo/typescript-config": "*",
     "@types/bun": "latest",
     "@types/express": "^5.0.6"
-  },
-  "scripts": {
-    "dev": "bun src/index.ts"
   },
   "peerDependencies": {
     "typescript": "^5"
