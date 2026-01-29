@@ -4,15 +4,14 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun run src/index.ts"
+    "dev": "bun run --watch src/index.ts"
   },
   "devDependencies": {
-    "@repo/typescript-config": "*",
-    "@repo/db": "*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/db": "workspace:*",
     "@types/bcryptjs": "^3.0.0",
     "@types/bun": "latest",
     "@types/express": "^5.0.6",
-    "@types/jsonwebtoken": "^9.0.10",
     "prisma": "^7.3.0"
   },
   "peerDependencies": {
@@ -22,6 +21,6 @@
     "bcryptjs": "^3.0.3",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.3"
+    "zod": "^4.3.6"
   }
 }
