@@ -12,6 +12,6 @@ app.get("/", (_req: Request, res: Response) => {
 });
 
 app.use("/api/users", userRoutes);
-// app.use("/api/notes", notesRoutes);
+app.use("/api/notes", notesRoutes);
 
 export default app;
