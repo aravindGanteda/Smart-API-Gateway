@@ -1,5 +1,6 @@
-import app from './app';
+import app from "./app.ts";
+import { env } from "./config/env.ts";
 
-app.listen(3003, () => {
-  console.log('Server is running on port 3003');
+app.listen(env.port, () => {
+  console.log(`Gateway running on port ${env.port}`);
 });
